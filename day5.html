@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt("enter the number")
+
+        if(a>0 && a<=50){
+            units=a*2
+            //document.write(units);
+        }
+        else if(a>51 && a<=150){
+            rem=a-50
+            units=(50*2)+(rem*3)
+            //document.write(units);
+        }
+        else if(a>150 && a<=250){
+            rem=a-150
+            units=(50*2)+(100*3)+(rem*5)
+            //document.write(units);
+        }else if(a>250){
+            rem=a-250
+            units=(50*2)+(100*3)+(100*5)+(rem*8)
+            //document.write(units);
+        }else{
+            document.write("invalid number");
+        }
+
+        charge=units*0.2
+        total=units+charge
+        document.write(total)
+    </script>
+</body>
+</html>
+
