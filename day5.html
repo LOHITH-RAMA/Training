@@ -7,33 +7,41 @@
 </head>
 <body>
     <script>
-        let a=prompt("enter the number")
+ //       function mainfunction(callback){
+   //         document.write("Executing main function ")
+    //        callback()
+            
+     //   }
+   //     document.write("<br>")
+     //   function callbackFunction(){
+     //       document.write("callback function executedd")
+      //  }
+      //  document.write("<br>")
+      //  mainfunction(callbackFunction)
 
-        if(a>0 && a<=50){
-            units=a*2
-            //document.write(units);
-        }
-        else if(a>51 && a<=150){
-            rem=a-50
-            units=(50*2)+(rem*3)
-            //document.write(units);
-        }
-        else if(a>150 && a<=250){
-            rem=a-150
-            units=(50*2)+(100*3)+(rem*5)
-            //document.write(units);
-        }else if(a>250){
-            rem=a-250
-            units=(50*2)+(100*3)+(100*5)+(rem*8)
-            //document.write(units);
-        }else{
-            document.write("invalid number");
-        }
+    //    document.write("<br>")
+      //  function greet(name,callback){
+     //       document.write(" hi ",name)
+     //       callback()
+    //    }
+      //  function callback1(){
+      //      document.write(" how are you! ")
+      //  }
+      //  greet("Lohith",callback1)
 
-        charge=units*0.2
-        total=units+charge
-        document.write(total)
+    
+        function registeruser(username, email, callback) {
+          console.log("registering user" + username);
+          setTimeout(function () {
+            console.log("user" + username + "registered succesfully");
+            callback(email);
+          }, 2000);
+        }
+        function sendWelcomeEmail(email) {
+          console.log("sending welcome email to" + email);
+        }
+        registeruser("lohith", "lohith123@gmail.com,sendWelcomeEmail");
+
     </script>
 </body>
 </html>
-
