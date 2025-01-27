@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ //       let mypromise = new Promise((resolve, reject) => {
+   //         let success = true;
+   //         if(success){
+     //           resolve("Promise is resolved");
+    //        }else{
+    //            reject("Promise is rejected");
+     //       }
+     //       });
+       //     mypromise
+      //      .then((result)=>{
+      //          document.write(result);
+        //    });
+      //      mypromise
+      //      .catch((error)=>{
+      //      document.write(error);
+       ///     })
+       let pro=new Promise((resolve,reject)=>{
+        resolve(5);
+    })
+    pro.then(result=>{
+        document.write(result)
+        setTimeout((pro)=>{
+            document.write("success")
+        },3000)
+    })
+    </script>
+</body>
+</html>
