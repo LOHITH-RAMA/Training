@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let title
+       for(let i=0;i<3;i++){
+            title=document.createElement('h2')
+            title.className="tt"
+            title.textContent=i
+            console.log(title)
+        }
+    </script> -->
+
+
+<!-- <script>
+    const titles=["saicharan","pardhu","lohith"]
+    for(let i=0;i<titles.length;i++){
+        let title=document.createElement('h1');
+        title.className="a";
+        title.textContent=titles[i]
+        console.log(title)
+    }
+</script> -->
+<!-- <h1> removing Child Node</h1>
+ <h2> iam LOHITH</h2>
+
+ <ul>
+    <li>lohith</li>
+    <li>pardhu</li>
+    <li>saicharan</li>
+ </ul>
+
+ <script>
+    const ul=document.querySelector('ul')
+    const lists=document.querySelectorAll('li')
+    console.log(lists)
+    for(const list of lists){
+        console.log(`Removing:${list.textContent}`)
+        ul.removeChild(list)
+        console.log(lists)
+    }
+    
+ </script> -->
+
+ <div id="a">
+    <h1>lohith</h1>
+    <h1>sai charan</h1>
+ </div>
+ <div id="b">
+    <h1>pardhu</h1>
+    <h1>srinath</h1>
+
+    <script>
+        let n=document.createElement("h2")
+        n.textContent="lohith is the team lead"
+        //get the parent element
+
+        let p=document.getElementById("b")
+        console.log(p.innerText)
+       
+        //append the new element to the parent node
+        p.appendChild(n)
+        
+        //log the innertext of the parent
+        console.log(p)
+        console.log(p.innerText)
+    </script>
+</body>
+</html>
