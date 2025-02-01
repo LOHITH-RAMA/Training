@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+        var age=prompt("enter your age")
+        var person=prompt("enter citizen")
+        var citizenship_passed=prompt("enter pass or fail")
+        if(age>18){
+            if(person=="Citizen" || person=="citizen"){
+                if( citizenship_passed=="pass" || citizenship_passed=="Pass" ){
+                    document.write("Eligible for vote")
+                }
+
+            }
+        }else{
+            document.write("Not eligible for vate")
+        }
+    </script> -->
+    <script>
+        var customer_buyed = parseFloat(prompt("Enter an amount:"));
+        var have_memebership=prompt("enter Yes or No!")
+        var discount=0
+        if(customer_buyed>100){
+            discount=customer_buyed*0.20
+            
+        }
+        else if(customer_buyed>50 && customer_buyed<=100){
+            discount=customer_buyed*0.10
+        }
+
+        if(have_memebership=="yes"){
+            let discount1=discount*0.5
+            document.write(discount1)
+        }else{
+            document.write(discount)
+        }
+    </script>
+</body>
+</html>
