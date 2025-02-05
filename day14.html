@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- <div id="app"></div>
+    <script type="text/babel">
+        // const element = <h1 className="a">Hello developer venkat</h1>
+        // const e = document.getElementById('app')
+        // const root = ReactDOM.createRoot(e)
+        // root.render(element)
+
+        // const e=React.createElement(
+        //     'h1',{id :a}, "iam sai"
+        //)
+        
+    </script> -->
+
+    <!-- <div id="app"></div>
+    <script type="text/babel">
+        const n = 10;
+        const m = <h1>React  is {n*2} times better than jsx</h1>
+        const r=ReactDOM.createRoot(document.getElementById('app'))
+        r.render(m);
+    </script> -->
+
+
+<div id="app"></div>
+    <script type="text/babel">
+        const App = () =>{
+            const isLoggedIn = true;
+            return(
+                <div>
+                    {isLoggedIn ? (<h1>Welcome back, user!</h1>):(<h1>please logIn</h1>)}
+                    {isLoggedIn && <h2>You have a new notification</h2>}
+                </div>
+            );
+        };
+        const root = ReactDOM.createRoot(document.getElementById('app'))
+        root.render(<App/>)
+        
+    </script>
+
+    
+</body>
+</html>
